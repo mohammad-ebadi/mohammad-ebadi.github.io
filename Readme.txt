@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: Personal
-Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+[![GitHub Streak](https://streak-stats.demolab.com?user=mohammad-ebadi&theme=dark)](https://git.io/streak-stats)
