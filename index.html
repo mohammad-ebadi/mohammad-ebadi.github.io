@@ -1,25 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
+    <meta name="description"
+        content="Mohammad Ebadi's professional SEO-optimized image gallery. Responsive, high-quality images with lightbox and structured data.">
+    <meta name="keywords"
+        content="Mohammad Ebadi, personal photos, image gallery, profile images, SEO optimized images, responsive gallery, lightbox">
+    <meta name="author" content="Mohammad Ebadi">
+    <title>Mohammad Ebadi - Ultimate Image Gallery</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <style>
+        /* Base Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            display: flex;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 40px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.02);
+        }
+
+        .caption {
+            padding: 12px;
+            font-size: 1rem;
+            color: #555;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            animation: fadeInUp 0.6s forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            z-index: 1000;
         }
-        h1 {
-            color: #333;
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 12px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Mohammad Ebadi Ultimate Gallery",
+    "description": "Professional personal images of Mohammad Ebadi, SEO optimized with lightbox and responsive design.",
+    "url": "https://yourgithubusername.github.io/yourrepo",
+    "image": [
+      "./MohammadEbadi1.jpg",
+      "IMAGE_URL_2",
+      "IMAGE_URL_3",
+      "IMAGE_URL_4",
+      "IMAGE_URL_5",
+      "IMAGE_URL_6",
+      "IMAGE_URL_7",
+      "IMAGE_URL_8",
+      "IMAGE_URL_9",
+      "IMAGE_URL_10"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-    <h1>Hello, this is a simple text!</h1>
+    <img src="./MohammadEbadi1.jpg" alt="Mohammad Ebadi portrait" title="Mohammad Ebadi portrait" loading="lazy">
+    <h1>Mohammad Ebadi - Ultimate Image Gallery</h1>
+    <main>
+        <section class="gallery" id="gallery">
+            <!-- Gallery Items -->
+            <figure class="gallery-item fade-in">
+                <a href="#img1"><img src="IMAGE_URL_1" alt="Description of image 1" title="Description of image 1"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 1 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img2"><img src="IMAGE_URL_2" alt="Description of image 2" title="Description of image 2"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 2 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img3"><img src="IMAGE_URL_3" alt="Description of image 3" title="Description of image 3"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 3 description</figcaption>
+            </figure>
+            <figure class="gallery-item fade-in">
+                <a href="#img4"><img src="IMAGE_URL_4" alt="Description of image 4" title="Description of image 4"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 4 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img5"><img src="IMAGE_URL_5" alt="Description of image 5" title="Description of image 5"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 5 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img6"><img src="IMAGE_URL_6" alt="Description of image 6" title="Description of image 6"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 6 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img7"><img src="IMAGE_URL_7" alt="Description of image 7" title="Description of image 7"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 7 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img8"><img src="IMAGE_URL_8" alt="Description of image 8" title="Description of image 8"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 8 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img9"><img src="IMAGE_URL_9" alt="Description of image 9" title="Description of image 9"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 9 description</figcaption>
+            </figure>
+
+            <figure class="gallery-item fade-in">
+                <a href="#img10"><img src="IMAGE_URL_10" alt="Description of image 10" title="Description of image 10"
+                        loading="lazy"></a>
+                <figcaption class="caption">Image 10 description</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Lightbox sections -->
+    <div id="img1" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_1" alt="Description of image 1">
+    </div>
+    <div id="img2" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_2" alt="Description of image 2">
+    </div>
+    <div id="img3" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_3" alt="Description of image 3">
+    </div>
+    <div id="img4" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_4" alt="Description of image 4">
+    </div>
+    <div id="img5" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_5" alt="Description of image 5">
+    </div>
+    <div id="img6" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_6" alt="Description of image 6">
+    </div>
+    <div id="img7" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_7" alt="Description of image 7">
+    </div>
+    <div id="img8" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_8" alt="Description of image 8">
+    </div>
+    <div id="img9" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_9" alt="Description of image 9">
+    </div>
+    <div id="img10" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="IMAGE_URL_10" alt="Description of image 10">
+    </div>
+
+    <script>
+        // Fade-in animation on scroll
+        const items = document.querySelectorAll('.gallery-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        items.forEach(item => observer.observe(item));
+    </script>
 </body>
+
 </html>
