@@ -2,15 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mohammad Ebadi - Professional Image Gallery & Portfolio Photos</title>
+
+    <!-- Meta SEO -->
     <meta name="description"
-        content="Mohammad Ebadi's professional SEO-optimized image gallery. Responsive, high-quality images with lightbox and structured data.">
+        content="Official image gallery of Mohammad Ebadi. High-quality professional photos, optimized for Google Search and Google Images. Responsive, fast, and SEO-enhanced." />
     <meta name="keywords"
-        content="Mohammad Ebadi, personal photos, image gallery, profile images, SEO optimized images, responsive gallery, lightbox">
-    <meta name="author" content="Mohammad Ebadi">
-    <title>Mohammad Ebadi - Ultimate Image Gallery</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+        content="Mohammad Ebadi, Mohammad Ebadi photos, Mohammad Ebadi images, Mohammad Ebadi gallery, official Mohammad Ebadi pictures" />
+    <meta name="author" content="Mohammad Ebadi" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mohammad Ebadi - Photo Gallery" />
+    <meta property="og:description" content="Browse professional and personal photos of Mohammad Ebadi." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mohammad-ebadi.github.io/" />
+    <meta property="og:image" content="./assets/MohammadEbadi1.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohammad Ebadi - Official Photos" />
+    <meta name="twitter:description" content="High-quality image gallery of Mohammad Ebadi." />
+    <meta name="twitter:image" content="./assets/MohammadEbadi1.jpg" />
+
+    <link rel="icon" href="favicon.ico" />
 
     <style>
         /* Base Reset */
@@ -80,7 +97,6 @@
             text-align: center;
         }
 
-        /* Fade-in animation */
         .fade-in {
             animation: fadeInUp 0.6s forwards;
         }
@@ -97,7 +113,6 @@
             }
         }
 
-        /* Lightbox styles */
         .lightbox {
             position: fixed;
             top: 0;
@@ -130,149 +145,109 @@
             text-decoration: none;
             font-weight: bold;
         }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-        }
     </style>
 
-    <!-- Structured Data JSON-LD -->
+    <!-- Enhanced JSON-LD for SEO -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ImageGallery",
-    "name": "Mohammad Ebadi Ultimate Gallery",
-    "description": "Professional personal images of Mohammad Ebadi, SEO optimized with lightbox and responsive design.",
-    "url": "https://yourgithubusername.github.io/yourrepo",
-    "image": [
-      "./MohammadEbadi1.jpg",
-      "IMAGE_URL_2",
-      "IMAGE_URL_3",
-      "IMAGE_URL_4",
-      "IMAGE_URL_5",
-      "IMAGE_URL_6",
-      "IMAGE_URL_7",
-      "IMAGE_URL_8",
-      "IMAGE_URL_9",
-      "IMAGE_URL_10"
-    ]
-  }
-  </script>
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Mohammad Ebadi - Official Image Gallery",
+      "description": "Professional and personal photos of Mohammad Ebadi.",
+      "creator": {
+        "@type": "Person",
+        "name": "Mohammad Ebadi",
+        "url": "https://mohammad-ebadi.github.io/"
+      },
+      "image": [
+        "./assets/MohammadEbadi1.jpg",
+        "./assets/MohammadEbadi2.jpg",
+        "./assets/MohammadEbadi3.jpg",
+        "./assets/MohammadEbadi4.jpg",
+        "./assets/MohammadEbadi5.jpg",
+        "./assets/MohammadEbadi6.jpg",
+        "./assets/MohammadEbadi7.jpg",
+        "./assets/MohammadEbadi8.jpg"
+      ]
+    }
+    </script>
+
 </head>
 
 <body>
-    <img src="./MohammadEbadi1.jpg" alt="Mohammad Ebadi portrait" title="Mohammad Ebadi portrait" loading="lazy">
-    <h1>Mohammad Ebadi - Ultimate Image Gallery</h1>
+    <h1>Mohammad Ebadi - Official Image Gallery</h1>
+
     <main>
-        <section class="gallery" id="gallery">
-            <!-- Gallery Items -->
+        <section class="gallery">
+
             <figure class="gallery-item fade-in">
-                <a href="#img1"><img src="IMAGE_URL_1" alt="Description of image 1" title="Description of image 1"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 1 description</figcaption>
+                <a href="./assets/MohammadEbadi1.jpg">
+                    <img src="./assets/MohammadEbadi1.jpg" alt="Mohammad Ebadi portrait photo 1"
+                        title="Mohammad Ebadi official photo 1" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 1</figcaption>
             </figure>
 
             <figure class="gallery-item fade-in">
-                <a href="#img2"><img src="IMAGE_URL_2" alt="Description of image 2" title="Description of image 2"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 2 description</figcaption>
+                <a href="./assets/MohammadEbadi2.jpg">
+                    <img src="./assets/MohammadEbadi2.jpg" alt="Mohammad Ebadi portrait photo 2"
+                        title="Mohammad Ebadi official photo 2" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 2</figcaption>
             </figure>
 
             <figure class="gallery-item fade-in">
-                <a href="#img3"><img src="IMAGE_URL_3" alt="Description of image 3" title="Description of image 3"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 3 description</figcaption>
-            </figure>
-            <figure class="gallery-item fade-in">
-                <a href="#img4"><img src="IMAGE_URL_4" alt="Description of image 4" title="Description of image 4"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 4 description</figcaption>
+                <a href="./assets/MohammadEbadi3.jpg">
+                    <img src="./assets/MohammadEbadi3.jpg" alt="Mohammad Ebadi portrait photo 3"
+                        title="Mohammad Ebadi official photo 3" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 3</figcaption>
             </figure>
 
             <figure class="gallery-item fade-in">
-                <a href="#img5"><img src="IMAGE_URL_5" alt="Description of image 5" title="Description of image 5"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 5 description</figcaption>
+                <a href="./assets/MohammadEbadi4.jpg">
+                    <img src="./assets/MohammadEbadi4.jpg" alt="Mohammad Ebadi portrait photo 4"
+                        title="Mohammad Ebadi official photo 4" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 4</figcaption>
             </figure>
 
             <figure class="gallery-item fade-in">
-                <a href="#img6"><img src="IMAGE_URL_6" alt="Description of image 6" title="Description of image 6"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 6 description</figcaption>
+                <a href="./assets/MohammadEbadi5.jpg">
+                    <img src="./assets/MohammadEbadi5.jpg" alt="Mohammad Ebadi portrait photo 5"
+                        title="Mohammad Ebadi official photo 5" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 5</figcaption>
             </figure>
 
             <figure class="gallery-item fade-in">
-                <a href="#img7"><img src="IMAGE_URL_7" alt="Description of image 7" title="Description of image 7"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 7 description</figcaption>
+                <a href="./assets/MohammadEbadi6.jpg">
+                    <img src="./assets/MohammadEbadi6.jpg" alt="Mohammad Ebadi portrait photo 6"
+                        title="Mohammad Ebadi official photo 6" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 6</figcaption>
             </figure>
 
             <figure class="gallery-item fade-in">
-                <a href="#img8"><img src="IMAGE_URL_8" alt="Description of image 8" title="Description of image 8"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 8 description</figcaption>
+                <a href="./assets/MohammadEbadi7.jpg">
+                    <img src="./assets/MohammadEbadi7.jpg" alt="Mohammad Ebadi portrait photo 7"
+                        title="Mohammad Ebadi official photo 7" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 7</figcaption>
             </figure>
 
             <figure class="gallery-item fade-in">
-                <a href="#img9"><img src="IMAGE_URL_9" alt="Description of image 9" title="Description of image 9"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 9 description</figcaption>
+                <a href="./assets/MohammadEbadi8.jpg">
+                    <img src="./assets/MohammadEbadi8.jpg" alt="Mohammad Ebadi portrait photo 8"
+                        title="Mohammad Ebadi official photo 8" loading="lazy">
+                </a>
+                <figcaption class="caption">Mohammad Ebadi – Photo 8</figcaption>
             </figure>
 
-            <figure class="gallery-item fade-in">
-                <a href="#img10"><img src="IMAGE_URL_10" alt="Description of image 10" title="Description of image 10"
-                        loading="lazy"></a>
-                <figcaption class="caption">Image 10 description</figcaption>
-            </figure>
         </section>
     </main>
 
-    <!-- Lightbox sections -->
-    <div id="img1" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_1" alt="Description of image 1">
-    </div>
-    <div id="img2" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_2" alt="Description of image 2">
-    </div>
-    <div id="img3" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_3" alt="Description of image 3">
-    </div>
-    <div id="img4" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_4" alt="Description of image 4">
-    </div>
-    <div id="img5" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_5" alt="Description of image 5">
-    </div>
-    <div id="img6" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_6" alt="Description of image 6">
-    </div>
-    <div id="img7" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_7" alt="Description of image 7">
-    </div>
-    <div id="img8" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_8" alt="Description of image 8">
-    </div>
-    <div id="img9" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_9" alt="Description of image 9">
-    </div>
-    <div id="img10" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="IMAGE_URL_10" alt="Description of image 10">
-    </div>
-
     <script>
-        // Fade-in animation on scroll
         const items = document.querySelectorAll('.gallery-item');
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -284,6 +259,7 @@
         }, { threshold: 0.1 });
         items.forEach(item => observer.observe(item));
     </script>
+
 </body>
 
 </html>
